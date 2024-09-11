@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe - Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-page">
+        <h2 id="player-turn">Loading...</h2>
+        <div class="game-container">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+        <button id="reset" class="reset-button">Reset Game</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const player1Name = localStorage.getItem('player1');
+            const player2Name = localStorage.getItem('player2');
+            if (player1Name && player2Name) {
+                document.getElementById('player-turn').textContent = `${player1Name}'s turn (X)`;
+            } else {
+                alert('Player names are missing. Please start a new game.');
+                window.location.href = 'index.html';
+            }
+        });
+    </script>
+</body>
+</html>
