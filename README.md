@@ -21,7 +21,7 @@ This project implements the classic Tic-Tac-Toe game where two players can compe
 
 ## 🌟 Demo
 
-Check out the live game to play Tic-Tac-Toe: [Play Tic-Tac-Toe](https://github.com/fuad-rahman-biswas/Tic-Tac-Toe)
+Check out the live game to play Tic-Tac-Toe: [Play Tic-Tac-Toe](https://tic-tac-toe-webapp001.netlify.app/)
 
 ## 💻 Getting Started
 
